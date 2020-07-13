@@ -10,5 +10,5 @@ RUN apt-get dist-upgrade -y
 RUN mkdir /app
 COPY --from=build /go/bin/loggen /app/
 WORKDIR /app
-USER nobody:nogroup
-ENTRYPOINT ["/bin/bash", "-c", "./loggen"]
+USER root
+CMD ["./loggen"]
