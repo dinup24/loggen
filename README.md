@@ -9,7 +9,7 @@ docker push us.icr.io/order-mgmt-np/oms/loggen:v1
 
 ### Usage
 ```
-./loggen <wait-time-in-minutes>
+./loggen <log-file-path> <no-of-threads>
 
-eg., ./loggen 10
+eg., ./loggen logs.txt 10
 ```
